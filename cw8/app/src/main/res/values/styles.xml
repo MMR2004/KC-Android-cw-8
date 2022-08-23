@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.App" parent="Theme.MaterialComponents">
+        ...
+        <item name="snackbarStyle">@style/Widget.App.Snackbar</item>
+        <item name="snackbarButtonStyle">@style/Widget.App.SnackbarButton</item>
+    </style>
+
+    <style name="Widget.App.Snackbar" parent="Widget.MaterialComponents.Snackbar">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Snackbar</item>
+        <item name="actionTextColorAlpha">1</item>
+    </style>
+
+    <style name="Widget.App.SnackbarButton" parent="Widget.MaterialComponents.Button.TextButton.Snackbar">
+        <item name="android:textColor">@android:color/holo_purple</item>
+    </style>
+
+    <style name="ThemeOverlay.App.Snackbar" parent="">
+        <item name="colorPrimary">@color/purple_700</item>
+        <item name="colorOnSurface">#7B1FA2</item>
+    </style>
+
+</resources>
